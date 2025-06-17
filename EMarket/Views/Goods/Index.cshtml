@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Товары";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Товары</h1>
+    <p>Список категорий:</p>
+    <ul>
+        @foreach(var item in Model)
+        {
+            <li>
+                @item.Name
+            </li> 
+        }
+       
+    </ul>
+   
+</div>
